@@ -59,3 +59,24 @@ def tavily_web_search_tool(query: str) -> str:
         return result
     except Exception as e:
         return f"Error performing deep web search: {e}"
+
+
+@tool
+def open_youtube_tool(query: str = "") -> str:
+    """Tool for opening YouTube.
+
+    Args:
+        query (str): user's query
+
+    Returns:
+        str: A message indicating the result of the operation.
+    """
+    try:
+        if query == "":
+            webbrowser.open("https://www.youtube.com")
+            return "Opening YouTube."
+        webbrowser.open(
+            f"https://www.youtube.com/results?search_query={query}")
+        return f"Searching for '{query}' on YouTube."
+    except Exception as e:
+        return f"Error performing web search: {e}"

@@ -41,6 +41,7 @@ This is the project of AI assistant Slothy. You can chat with him and he will re
 - **Tomorrow API**
 
 ## 🏗️Project Structure
+```
 Slothy-assistant/
 ├── src/ 
 │   ├── agent/ ## Agent config            
@@ -59,7 +60,7 @@ Slothy-assistant/
 ├── README.md
 ├── requirements.txt
 └── uv.lock
-
+```
 ## 🚀 Getting started locally
 ### Prerequisites
 - **pip** >=24.2

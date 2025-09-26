@@ -39,6 +39,27 @@ This is the project of AI assistant Slothy. You can chat with him and he will re
 - **Flet 0.28.3**  
 - **Tavily API**
 - **Tomorrow API**
+
+## 🏗️Project Structure
+Slothy-assistant/
+├── src/ 
+│   ├── agent/ ## Agent config            
+│   ├── app/ ## App config
+│   ├── assets/ ## App assets                       
+│   ├── models/ ## Ollama models
+│   ├── pages/ ## App pages            
+│   ├── schemas/ ## App schemas         
+│   ├── tools/ ## Model's tools            
+│   └── voice/ ## Voice recognition
+├── .env_example ## Environment variables example
+├── .gitignore 
+├── .python-version 
+├── main.py ## Main file
+├── pyproject.toml
+├── README.md
+├── requirements.txt
+└── uv.lock
+
 ## 🚀 Getting started locally
 ### Prerequisites
 - **pip** >=24.2
